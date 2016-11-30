@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/layouts/">
+	
+	<decorator name="default" page="/WEB-INF/views/template.jsp">
+		<pattern>/admin/*</pattern>
+		<pattern>/admin</pattern>
+	</decorator>
+	<decorator name="noLogin" page="/WEB-INF/views/nologinTemplate.jsp">
+        <pattern>/login</pattern>
+        <pattern>/admin/user/logout</pattern>
+        <pattern>/*</pattern>
+    </decorator>
+    <decorator name="noall" page="/WEB-INF/views/noallTemplate.jsp">
+        <pattern>/</pattern>
+        <pattern>/index</pattern>
+    </decorator>
+</decorators>
